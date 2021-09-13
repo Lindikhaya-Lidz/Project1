@@ -1,0 +1,16 @@
+<div>
+    <h3>Your Dairy</h3>
+    <i class="fas fa-arrow-right"></i>
+   <textarea placeholder='Write something' type='text' [(ngModel)] ='textArea'></textarea>
+   <div class='asset-container'>
+    <i class="far fa-grin" (click) = 'showEmojiField()'></i>
+    <img *ngIf='emojiField' src='assets/30-300053_keyboard-comments-keyboard-icon-free-png.png'>
+    <button (click)='entry()'>Save</button> 
+   </div>
+   <emoji-mart class="emoji-mart" *ngIf="emojiField" (emojiSelect)="addEmoji($event)" title="Choose your emoji">
+
+   </emoji-mart>  
+    <br>
+    <br>
+    <app-entries [entry] = 'entryList' [Hours] ='hours' [Minutes]='minutes'></app-entries>     
+</div>       

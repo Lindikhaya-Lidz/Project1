@@ -1,0 +1,76 @@
+/*=====================================================================================
+----------------------------TABLE OF CONTENT-----------------------------
+
+HEADING
+RIGHT ARROW
+EMOJI AND BUTTON
+EMOJI MART LIST
+=======================================================================================*/
+
+
+div{
+    width:363px;
+    height:175px;
+    margin:0 auto;
+    
+    //HEADING
+    h3{
+        font-family:Roboto;
+        font-size:14px;
+        color:#3E52BE;
+    }
+    
+    //RIGHT ARROW
+    .fa-arrow-right{
+        position:relative;
+        bottom:20%;
+        color:#3E52BE;
+        left:103%;
+        font-size:1.2rem;    
+    }
+
+    textarea{
+        width:363px;
+        height:155px;
+        padding:16px;
+        border:1px solid #F7F8F9;
+        border-radius:4px;
+    }
+    
+    //EMOJI AND BUTTON
+    .asset-container{
+        height:0px;
+
+        .fa-grin{
+            color:#3E52BE;
+            font-size:1.4rem;
+        }
+
+        img{
+            width:7%;
+            position:relative;
+            right:25px;
+            top:5px;
+        }
+
+        button{
+            background-color:#224272;
+            padding:7px 16px 7px 16px;
+            border:none;
+            border-radius:18px;
+            margin-left:92%;
+            position:relative;
+            bottom:26px;
+            color:white;
+
+        }
+    }
+    
+    //EMOJI-MART LIST
+    emoji-mart{
+        position:relative;
+        top:30%;
+        left:20px;
+        margin-bottom:5vh;
+    }
+}

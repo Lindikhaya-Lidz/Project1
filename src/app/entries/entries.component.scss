@@ -1,0 +1,28 @@
+/*====================================================================================
+----------------------------------TABLE OF CONTENT------------------------------------
+
+=====================================================================================*/
+
+ul{
+    list-style:none;
+       
+    li{
+        background-color:white;
+        padding:5%;
+        position:relative;
+        right:5%;
+        width:100%;
+        border-radius:10px;
+
+        i,span{
+            color:#3E52BE;
+        }
+        i{
+            padding-right:3px;
+        }
+        span{
+            font-size:.8rem;
+            padding:0 2px 0 2px;        
+        }
+    }
+}

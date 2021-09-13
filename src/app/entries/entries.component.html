@@ -1,0 +1,11 @@
+<ul *ngFor='let Entry of entry' >
+    <li>
+        <i class="fas fa-calendar-alt"></i>
+        <span class='time'>{{Hours}}:{{Minutes}}</span>
+        <span>|</span>
+        <span class='date'>{{todayDate | date}}</span>
+        <br><br>
+        <!--dairy text-->
+        {{Entry}}
+    </li>
+</ul>
