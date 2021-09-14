@@ -50,6 +50,7 @@ export class AppComponent {
       this.emojiField = false;
     }else{
       this.emojiField = true;
+      
     }
   }
 

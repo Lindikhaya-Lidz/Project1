@@ -29,6 +29,17 @@ div{
         font-size:1.2rem;    
     }
 
+    .delete{
+        background-color:red;
+        color:white;
+        border:none;
+        padding:5px;
+        border-radius:3px;
+        position:relative;
+        left:84%;
+        bottom:20%;
+    }
+
     textarea{
         width:363px;
         height:155px;
