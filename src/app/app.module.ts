@@ -7,11 +7,13 @@ import{ PickerModule }from '@ctrl/ngx-emoji-mart';
 import{ FormsModule}from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EntriesComponent } from './entries/entries.component';
+import { RecordedDiaryComponent } from './recorded-diary/recorded-diary.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EntriesComponent
+    EntriesComponent,
+    RecordedDiaryComponent
   ],
   imports: [
     BrowserModule,

@@ -10,7 +10,7 @@ EMOJI LIST
 ========================================================================================*/
 
 import { Component } from '@angular/core';
-
+import { TimeService } from'./time.service';
 
 @Component({
   selector: 'app-root',
@@ -20,8 +20,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   public textArea: string = '';
   entryList:string[] = [];
-  hours?:Number;
-  minutes?:Number;
   emojiField:boolean = false;
 
   //ADD EMOJI INTO TEXTAREA
@@ -34,14 +32,17 @@ export class AppComponent {
     this.entryList.push(this.textArea);
 
     //CURRENT TIME 
-    this.hours = new Date().getHours();
-    this.minutes = new Date().getMinutes();
 
     //REMOVE EMOJI LIST
     this.emojiField = false;
     
     //CLEAR TEXTAREA
     this.textArea = '';
+
+  }
+
+  deleteEntry(){
+    this.entryList = [];
   }
 
   //EMOJI LIST
@@ -54,7 +55,7 @@ export class AppComponent {
     }
   }
 
-  constructor(){
+  constructor(private time:TimeService){
     
   }
 }

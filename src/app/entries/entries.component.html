@@ -1,11 +1,16 @@
-<ul *ngFor='let Entry of entry' >
+<ul *ngFor='let Entry of entry'>
+    <i class="fas fa-times close" (click) = 'deleteEntry()'></i>
     <li>
-        <i class="fas fa-calendar-alt"></i>
-        <span class='time'>{{Hours}}:{{Minutes}}</span>
-        <span>|</span>
-        <span class='date'>{{todayDate | date}}</span>
-        <br><br>
+        <div>
+            <i class="fas fa-calendar-alt"></i>
+            <!--<span class='time'>{{}}:{{}}</span>-->
+            <span>|</span>
+            <span class='date'>{{todayDate | date}}</span>
+            <br><br>
+        </div>    
         <!--dairy text-->
         {{Entry}}
     </li>
 </ul>
+
+

@@ -1,8 +1,8 @@
 <div>
-    <h3>Your Dairy</h3>
+    <h1>Lets Document your Life</h1>
     <!--<i class="fas fa-arrow-right"></i>-->
-    <button class='delete'>Delete Entries</button>
-   <textarea placeholder='Write something' type='text' [(ngModel)] ='textArea'></textarea>
+    <button class='delete' (click) ='deleteEntry()'>Delete Entries</button>
+   <textarea placeholder='How was your day....' type='text' [(ngModel)] ='textArea'></textarea>
    <div class='asset-container'>
     <i class="far fa-grin" (click) = 'showEmojiField()'></i>
     <img *ngIf='emojiField' src='assets/30-300053_keyboard-comments-keyboard-icon-free-png.png'>
@@ -13,5 +13,5 @@
    </emoji-mart>  
     <br>
     <br>
-    <app-entries [entry] = 'entryList' [Hours] ='hours' [Minutes]='minutes'></app-entries>     
+    <app-entries [entry] = 'entryList'></app-entries>     
 </div>       

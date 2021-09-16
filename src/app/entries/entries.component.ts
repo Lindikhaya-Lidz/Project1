@@ -3,9 +3,9 @@
 TEXTAREA TEXT
 ===================================================================================*/
 
-
-import { ThrowStmt } from '@angular/compiler';
+import { getLocaleTimeFormat } from '@angular/common';
 import { Component, OnInit,Input } from '@angular/core';
+import{ TimeService } from'../time.service'
 
 @Component({
   selector: 'app-entries',
@@ -15,16 +15,17 @@ import { Component, OnInit,Input } from '@angular/core';
 export class EntriesComponent implements OnInit {
   //TEXTAREA TEXT
   @Input() entry?:string[];
-
-  @Input()Hours?:Number;
-  @Input()Minutes?:Number;
+  @Input()Time?:any;
   todayDate: number = Date.now();
-
-  constructor() {
+   
+  deleteEntry(){
     
   }
+
+  constructor() {
+  }
   ngOnInit(): void {
-   
+    
   }
 
 }
