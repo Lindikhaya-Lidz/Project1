@@ -4,6 +4,7 @@
     <button class='delete' (click) ='deleteEntry()'>Delete Entries</button>
    <textarea placeholder='How was your day....' type='text' [(ngModel)] ='textArea'></textarea>
    <div class='asset-container'>
+     
     <i class="far fa-grin" (click) = 'showEmojiField()'></i>
     <img *ngIf='emojiField' src='assets/30-300053_keyboard-comments-keyboard-icon-free-png.png'>
     <button (click)='entry()'>Save</button> 
