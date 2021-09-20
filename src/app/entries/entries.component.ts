@@ -5,7 +5,7 @@ TEXTAREA TEXT
 
 import { getLocaleTimeFormat } from '@angular/common';
 import { Component, OnInit,Input } from '@angular/core';
-import{ TimeService } from'../time.service'
+import{ AppComponent } from'../app.component';
 
 @Component({
   selector: 'app-entries',
@@ -17,12 +17,13 @@ export class EntriesComponent implements OnInit {
   @Input() entry?:string[];
   @Input()Time?:any;
   todayDate: number = Date.now();
+  takeIt = this.appComp.lastTime;
    
   deleteEntry(){
     
   }
 
-  constructor() {
+  constructor(public appComp:AppComponent) {
   }
   ngOnInit(): void {
     

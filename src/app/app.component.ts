@@ -21,6 +21,8 @@ export class AppComponent {
   public textArea: string = '';
   entryList:string[] = [];
   emojiField:boolean = false;
+  timeStore:any[] = [{hours:0,minutes:0}];
+  lastTime:{} = {hours:0,minutes:0};
 
   //ADD EMOJI INTO TEXTAREA
   public addEmoji(event:any){
@@ -32,13 +34,16 @@ export class AppComponent {
     this.entryList.push(this.textArea);
 
     //CURRENT TIME 
-
+    let newHour = new Date().getHours();
+    let newMinute = new Date().getMinutes();
+    this.timeStore.push({hours:newHour,minutes:newMinute});
+    this.lastTime = {hours:this.timeStore[this.timeStore.length -1].hours,minutes:this.timeStore[this.timeStore.length -1].minutes}  
     //REMOVE EMOJI LIST
     this.emojiField = false;
     
     //CLEAR TEXTAREA
     this.textArea = '';
-
+    console.log(this.lastTime);
   }
 
   deleteEntry(){
